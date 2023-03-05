@@ -24,14 +24,12 @@ function MathQues() {
   };
 
   return (
-    <div>
+    <MathJaxContext>
       <p className="heading-txt">NIOCLASS MATH QUESTIONS</p>
       <div className="container">
         <div className="question">
         <span id="question-number">{currentQuestion + 1}. </span>
-          <MathJaxContext>
-            <MathJax id="question-text">{Data[currentQuestion].question}</MathJax>
-          </MathJaxContext>
+         <MathJax id="question-text">{Data[currentQuestion].question}</MathJax> 
         </div>
         <div style={{ display: "flex" }}>
           <input
@@ -48,7 +46,7 @@ function MathQues() {
           />
         </div>
       </div>
-    </div>
+      </MathJaxContext>
   );
 }
 
