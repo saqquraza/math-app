@@ -14,7 +14,7 @@ body{
 }
 
 .container {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   flex-direction: column;
   min-height: 300px;
@@ -38,7 +38,7 @@ body{
   text-transform: uppercase;
 }
 .question{
-  margin:18px;
+  margin-bottom:18px;
   box-shadow: 0px 0px 10px 1px #a2a3a3;
   border-radius: 5px;
   padding:5px;

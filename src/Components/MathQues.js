@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Data } from "../Data/Data";
-import { MathJax, MathJaxContext } from "better-react-mathjax";
+import { MathJax } from "better-react-mathjax";
 import { useNavigate } from "react-router-dom";
 import { routes } from "../routes";
 
@@ -24,14 +24,14 @@ function MathQues() {
   };
 
   return (
-    <MathJaxContext>
+   <div>
       <p className="heading-txt">NIOCLASS MATH QUESTIONS</p>
       <div className="container">
         <div className="question">
         <span id="question-number">{currentQuestion + 1}. </span>
          <MathJax id="question-text">{Data[currentQuestion].question}</MathJax> 
         </div>
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex" ,justifyContent:"space-between"}}>
           <input
             type="button"
             value="Previous"
@@ -46,7 +46,7 @@ function MathQues() {
           />
         </div>
       </div>
-      </MathJaxContext>
+      </div>
   );
 }
 
